@@ -10,7 +10,7 @@ export default function Home() {
       <div
         className={`fixed flex mt-2 ${
           isOpen ? "" : ""
-        } right-0 z-[1] mr-4 mt-3`}
+        } right-0 z-[1] mr-4 mt-3 `}
       >
         <div
           className={`z-[2] flex flex-col md:flex-row w-max bg-white rounded-lg py-2 px-1 ${
@@ -35,10 +35,10 @@ export default function Home() {
         </div>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="p-2 mb-2 ml-4 text-black-500 hover:text-black-400 bg-white rounded-lg md:hidden"
+          className="p-2 mb-2 ml-4 text-black-500 hover:text-black-400 max-h-10  bg-white rounded-lg md:hidden"
         >
           {isOpen ? (
-            <svg className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+            <svg className="h-6 w-6 " viewBox="0 0 20 20" fill="currentColor">
               <path
                 fillRule="evenodd"
                 d="M3 5h14a1 1 0 010 2H3a1 1 0 010-2zm0 4h14a1 1 0 010 2H3a1 1 0 010-2zm0 4h14a1 1 0 010 2H3a1 1 0 010-2z"
