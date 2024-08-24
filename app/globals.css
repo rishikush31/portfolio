@@ -10,3 +10,21 @@ html, body {
   width: 100%;
 }
 
+.objectPositionforeground{
+  object-position: -200px 100px;
+}
+.objectPositionbackground{
+  object-position: -300px ;
+}
+.objectPositiontemplate{
+  object-position: -900px ;
+}
+.objectPositionfield{
+  object-position: -200px ;
+}
+.objectPositionsakura{
+}
+.objectPositionday  {
+  object-position: -500px ;
+}
+
