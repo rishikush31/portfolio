@@ -17,14 +17,49 @@ html, body {
   object-position: -300px ;
 }
 .objectPositiontemplate{
-  object-position: -900px ;
+  background-position: -45rem bottom;
 }
 .objectPositionfield{
-  object-position: -200px ;
+  background-position: 95rem bottom;
 }
+
+
+
 .objectPositionsakura{
+  background-position: center bottom;
 }
+
+.objectPositionsakura2{
+  background-position: 2rem bottom;
+}
+
 .objectPositionday  {
-  object-position: -500px ;
+  background-position: 0rem bottom;
+}
+.font-border{
+  text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
 }
 
