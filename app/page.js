@@ -9,7 +9,7 @@ export default function Home() {
     <div className="">
       <div className="absolute left-0 z-[1] ml-6 mt-6  cursor-pointer ">
         {" "}
-        <a className="text-white font-border font-extrabold font-mono text-2xl">
+        <a className="text-white font-border font-extrabold font-mono text-2xl font-mono">
           @Rishi-Srivastava
         </a>
       </div>
@@ -100,7 +100,7 @@ export default function Home() {
           className="relative font-mono min-h-screen overflow-auto objectPositiontemplate md:bg-right-bottom bg-cover "
           style={{ backgroundImage: `url("/template.jpg")` }}
         >
-          <div className="absolute z-[2] flex flex-col ml-[2rem] md:ml-[5rem] py-5  md:py-0 ">
+          <div className=" z-[2] flex flex-col ml-[2rem] md:ml-[5rem] py-5  md:py-0 ">
             <div className="text-white text-[3rem] font-bold mt-[2rem] md:mt-[2rem]">
               Who am I?
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
               </span>
               ,
             </div>
-            <div className="text-white text-[1.3rem] md:text-[1.5rem] text-left max-w-[80vw] md:max-w-[50vw] ">
+            <div className="text-white text-[1.1rem] md:text-[1.4rem] text-left max-w-[80vw] md:max-w-[50vw] ">
               {" "}
               A final year under-graduate student at HBTU Kanpur. Over the past
               three years, i have had experience with competitive programming
@@ -130,10 +130,256 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="relative min-w-full md:bg-left-top objectPositionfield  min-h-[200vh] bg-cover "
+          className="relative min-w-full md:bg-left-top objectPositionfield  min-h-[230vh] bg-cover "
           style={{ backgroundImage: `url("/field.jpg")` }}
         >
-          <div className="absolute h-full w-full"></div>
+          <div className="z-[2] mx-[2rem] md:mx-[5rem] ">
+            <div className="font-mono text-[1.5rem] md:text-[3rem] pt-[4rem] font-bold">
+              Experience and Skills
+            </div>
+
+            {/* big screen */}
+            <div className="my-2 h-[80vh]">
+              <div className="text-[1.2rem]  md:text-[2rem] font-mono text-blue-700 font-bold md:font-semibold md:text-left mb-6">
+                Competitive Programming
+              </div>
+              <div className="bento grid-cols-4 grid-rows-2 gap-5 h-full hidden md:grid">
+                <div className="flip-card">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front bg-contain bg-left"
+                      style={{
+                        backgroundImage: `url('stickers/codechef.png')`,
+                      }}
+                    ></div>
+                    <div className="h-full flip-card-back py-4 px-4 bg-yellow-300 flex flex-col justify-between">
+                      <div className="text-2xl font-mono text-right ">
+                        5-Star coder
+                        <br />
+                        rating: 2022
+                      </div>
+                      <div className="text-2xl font-mono text-right ">
+                        300+ problems
+                      </div>
+                      <div className="text-2xl font-mono text-green-500 cursor-pointer">
+                        rishikush@codechf
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front bg-cover bg-center "
+                      style={{
+                        backgroundImage: `url('stickers/leetcode.webp')`,
+                      }}
+                    ></div>
+                    <div className="h-full flip-card-back py-4 px-4 bg-orange-400 flex flex-col justify-between">
+                      <div className="text-2xl font-mono text-right ">
+                        rating: 1750
+                      </div>
+                      <div className="text-2xl font-mono text-right ">
+                        380+ problems
+                      </div>
+                      <div className="text-2xl font-mono text-green-300 cursor-pointer">
+                        rishikush@leetcode
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card font-mono">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front bg-cover bg-center"
+                      style={{
+                        backgroundImage: `url('stickers/atcoder.png')`,
+                      }}
+                    ></div>
+                    <div className="h-full flip-card-back py-4 px-4 bg-gray-400 flex flex-col justify-between">
+                      <div className="text-2xl font-mono text-right ">
+                        rating: 1068
+                      </div>
+                      <div className="text-2xl font-mono text-right ">
+                        190+ problems
+                      </div>
+                      <div className="text-2xl font-mono text-green-100 cursor-pointer">
+                        rishikush@atCoder
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-1 row-span-2 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative p-4 h-full justify-around flex flex-col bg-blue-500 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                      <div className="text-3xl mt-[4rem] font-mono">
+                        Solved over <div className=" text-8xl">2300</div>{" "}
+                        problems over all coding platforms.
+                      </div>
+                      <div className="mt-[2rem] text-2xl font-bold font-mono">
+                        <hr className="border-black border-1" />
+                        <div className="pt-[1rem] cursor-pointer">LinkedIn</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-span-2 row-span-1 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative p-2 h-full bg-pink-400 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                      <div className="text-2xl font-mono">
+                        <span className="font-bold">TCS Codevita 2023</span>{" "}
+                        Round-2 <br /> <span className=" text-8xl">92</span>
+                        <span className="text-3xl">
+                          th rank all over India
+                        </span>{" "}
+                      </div>
+                      <div className="mt-[1rem] text-2xl font-bold font-mono">
+                        <hr className="border-black border-1" />
+                        <div className="pt-[1rem] cursor-pointer">
+                          Certificate
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front bg-cover bg-left-bottom"
+                      style={{
+                        backgroundImage: `url('stickers/codeforces.webp')`,
+                      }}
+                    ></div>
+                    <div className="h-full flip-card-back py-4 px-4 bg-blue-600 flex flex-col justify-between">
+                      <div className="text-2xl font-mono text-right ">
+                        Expert
+                        <br />
+                        rating: 1666
+                      </div>
+                      <div className="text-2xl font-mono text-right ">
+                        1400 problems
+                      </div>
+                      <div className="text-2xl font-mono text-green-100 cursor-pointer">
+                        rishikush@cforces
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bento grid grid-cols-2 md:hidden grid-rows-4 gap-3 h-full">
+                <div className="flip-card">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front bg-contain bg-left"
+                      style={{
+                        backgroundImage: `url('stickers/codechef.png')`,
+                      }}
+                    ></div>
+                    <div className="h-full flip-card-back py-2 px-4 bg-yellow-300 flex flex-col justify-between">
+                      <div className=" text-right ">
+                        5-Star coder
+                        <br />
+                        rating: 2022
+                      </div>
+                      <div className=" text-right ">300+ problems</div>
+                      <div className=" text-green-500 cursor-pointer">
+                        rishikush@cchf
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front bg-cover bg-center "
+                      style={{
+                        backgroundImage: `url('stickers/leetcode.webp')`,
+                      }}
+                    ></div>
+                    <div className="h-full flip-card-back py-2 px-4 bg-orange-400 flex flex-col justify-between">
+                      <div className=" text-right ">rating: 2022</div>
+                      <div className=" text-right ">380+ problems</div>
+                      <div className=" text-green-500 cursor-pointer">
+                        rish@lcode
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-2 row-span-1 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative p-2 h-full bg-pink-400 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                    <div className="text-1xl font-mono">
+                        <span className="font-bold">TCS Codevita 2023</span>{" "}
+                        Round-2 <br /> <span className=" text-2xl">92</span>
+                        <span className="text-1xl">
+                          th rank all over India
+                        </span>{" "}
+                      </div>
+                      <div className="mt-[1rem] text-1xl font-bold font-mono">
+                        <hr className="border-black border-1" />
+                        <div className="pt-[1rem] cursor-pointer">
+                          Certificate
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-1 row-span-2 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative p-2 h-full bg-blue-500 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                      <div className="text-1xl mt-[2rem] font-mono">
+                        Solved over <div className=" text-2xl">2300</div>{" "}
+                        problems over all coding platforms.
+                      </div>
+                      <div className="mt-[2rem] text-1xl font-bold font-mono">
+                        <hr className="border-black border-1" />
+                        <div className="pt-[1rem] cursor-pointer">LinkedIn</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front bg-cover bg-left-bottom"
+                      style={{
+                        backgroundImage: `url('stickers/codeforces.webp')`,
+                      }}
+                    ></div>
+                    <div className="h-full flip-card-back py-2 px-4 bg-blue-600 flex flex-col justify-between">
+                      <div className=" text-right ">
+                        Expert
+                        <br />
+                        rating: 1666
+                      </div>
+                      <div className=" text-right ">1400 problems</div>
+                      <div className=" text-green-500 cursor-pointer">
+                        rish@cforces
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front bg-cover bg-center"
+                      style={{
+                        backgroundImage: `url('stickers/atcoder.png')`,
+                      }}
+                    ></div>
+                    <div className="h-full flip-card-back py-2 px-4 bg-gray-400 flex flex-col justify-between">
+                      <div className=" text-right ">rating: 1068</div>
+                      <div className=" text-right ">190+ problems</div>
+                      <div className=" text-green-100 cursor-pointer">
+                        rish@atcoder
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div
           className="relative min-h-[140vh] bg-cover md:objectPositionsakura2 objectPositionsakura"
