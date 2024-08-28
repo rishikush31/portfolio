@@ -453,15 +453,15 @@ export default function Home() {
                 <div className="flip-card font-mono">
                   <div className="flip-card-inner h-full border-[2px] border-black">
                     <div
-                      className="flip-card-front flex flex-col pt-2 bg-[#bbb] cursor-pointer"
+                      className="flip-card-front flex flex-col pt-2  bg-[#bbb] cursor-pointer"
                     >
-                      <span className="text-xl font-bold">Home Page - </span>
+                      <span className="text-xl px-2 font-bold">Home Page - </span>
                       <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroHome.png"/></div>
                     </div>
                     <div
                       className="flip-card-back flex flex-col pt-2 bg-[#bbb] cursor-pointer"
                     >
-                      <span className="text-xl font-bold">Product Page - </span>
+                      <span className="text-xl px-2 font-bold">Product Page - </span>
                       <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroProduct.png"/></div>
                     </div>
                   </div>
