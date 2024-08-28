@@ -309,7 +309,7 @@ export default function Home() {
                 <div className="col-span-2 row-span-1 border-[2px] border-black">
                   <div className=" bg-black h-full">
                     <div className="relative p-2 h-full bg-pink-400 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
-                    <div className="text-1xl font-mono">
+                      <div className="text-1xl font-mono">
                         <span className="font-bold">TCS Codevita 2023</span>{" "}
                         Round-2 <br /> <span className=" text-2xl">92</span>
                         <span className="text-1xl">
@@ -377,6 +377,223 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="text-[1.2rem] mt-12 md:text-[2rem] font-mono text-blue-700 font-bold md:font-semibold md:text-left mb-6">
+                Internship 
+              </div>
+              <div className="bento grid-cols-4 grid-rows-2 gap-5 h-full hidden md:grid">
+                <div className="col-span-3 row-span-1 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative p-2 h-full bg-blue-400 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                      <div className="text-2xl font-mono">
+                        <span className="font-bold text-[1.3rem]">
+                          June&apos;24-July&apos;24
+                        </span>{" "}
+                        <br />{" "}
+                        <span className=" text-[1.6rem] font-bold">
+                          NeuroDrishti{" "}
+                        </span>
+                        <span className="text-[1.3rem]">
+                          develops AI assistance glasses that connects them to
+                          the world visually.
+                        </span>{" "}
+                      </div>
+                      <div className="text-2xl font-extrabold font-mono">
+                        <hr className="border-black border-1 my-[1rem]" />
+                        <div className=" cursor-pointer">
+                          Task :{" "}
+                          <span className="font-semibold text-[1.25rem]">
+                            Develop a dynamic showcase website to elegantly
+                            present our vision, products, notable achievements,
+                            and a user-friendly buy page.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div className="flip-card-front  bg-green-300">
+                      <div className="text-[1rem] font-bold font-mono text-left pl-2 pt-2 ">
+                        Role -
+                      </div>
+                      <div className="text-[2rem] font-mono mt-3 text-center ">
+                        Full-Stack <br />
+                        Web developer intern
+                      </div>
+                    </div>
+                    <div className="h-full flip-card-back bg-green-300 ">
+                      <div className="text-[2rem] font-mono h-full mt-9 text-center ">
+                        NextJS <br />
+                        Web developer intern
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-1 row-span-1 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative h-full justify-around bg-pink-700 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                      <div className=" text-center font-mono text-white font-bold text-[2rem] pb-[1rem] w-full h-1/2 pt-[1rem]">
+                        Internship Certificate
+                      </div>
+                      <hr className="border-black border-1 my-[1rem] mx-[1rem]" />
+                      <div className="text-center">
+                        <button className="bg-white p-[0.3rem] rounded-lg ">
+                          <div className="bg-gradient-to-r  from-red-600 to-yellow-400 rounded-lg cursor-pointer">
+                            <div className="p-2 px-3 text-lg font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
+                              Drive Link
+                            </div>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card font-mono">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div
+                      className="flip-card-front flex flex-col pt-2 bg-[#bbb] cursor-pointer"
+                    >
+                      <span className="text-xl font-bold">Home Page - </span>
+                      <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroHome.png"/></div>
+                    </div>
+                    <div
+                      className="flip-card-back flex flex-col pt-2 bg-[#bbb] cursor-pointer"
+                    >
+                      <span className="text-xl font-bold">Product Page - </span>
+                      <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroProduct.png"/></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-2 row-span-1 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative h-full justify-between flex bg-purple-700 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                      <div className="text-[3rem] px-4 font-bold flex  font-mono">
+                        <div className="mt-6">
+                        Tech <br/> Stack
+                        </div>
+                      <div className="border-black  border-[1px] mx-4 my-4" ></div>
+                      </div>
+                      <div className="flex text-1xl flex-wrap font-bold font-mono py-4">
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>JavaScript</span></div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>NextJs</span></div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>HTML</span></div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>CSS</span></div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>Tailwind</span></div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>ReactJs</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bento grid grid-cols-2 md:hidden grid-rows-4 gap-3 h-full">
+                <div className="flip-card col-span-2 row-span-1 ">
+                  <div className=" flip-card-inner border-[2px] border-black h-full">
+                    <div className="flip-card-front relative flex p-2 h-full bg-blue-400  ">
+                      <div className="text-[1rem] font-mono">
+                        <span className="font-bold text-[1rem]">
+                          June&apos;24-July&apos;24
+                        </span>{" "}
+                        <br />{" "}
+                        <span className=" text-[1rem] font-bold">
+                          NeuroDrishti{" "}
+                        </span>
+                        <span className="text-[1rem]">
+                          develops AI assistance glasses that connects them to
+                          the world visually.
+                        </span>{" "}
+                      </div>
+                    </div>
+                    <div className="flip-card-back h-full flex  bg-blue-400 ">
+                    <div className="text-[0.9rem] p-2 font-extrabold font-mono">
+                        <div className=" cursor-pointer">
+                          Task :{" "}
+                          <span className="font-semibold text-[0.9rem]">
+                            Develop a dynamic showcase website to elegantly
+                            present our vision, products, notable achievements,
+                            and a user-friendly buy page.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card row-span-1 col-span-1">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div className="flip-card-front  bg-green-300">
+                      <div className="text-[0.8rem] font-bold font-mono text-left pl-2 pt-2 ">
+                        Role -
+                      </div>
+                      <div className="text-[1rem] font-mono mt-2 text-center ">
+                        Full-Stack <br />
+                        Web developer intern
+                      </div>
+                    </div>
+                    <div className="h-full flip-card-back bg-green-300 ">
+                      <div className="text-[01rem] font-mono h-full mt-8 text-center ">
+                        NextJS <br />
+                        Web developer intern
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-1 row-span-2 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative h-full bg-purple-700 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                      <div className="text-[1rem] px-4 font-bold flex  font-mono">
+                        <div className="mt-2">
+                        Tech-Stack
+                        </div>
+                      </div>
+                      <hr className="border-black  border-[0.5px] mx-2 my-1" />
+                      <div className="flex text-[0.65rem] flex-wrap font-bold font-mono ">
+                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>JSX</span></div>
+                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>NextJs</span></div>
+                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>HTML</span></div>
+                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>CSS</span></div>
+                        <div className="border-2 h-6 w-[4rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>ReactJs</span></div>
+                        <div className="border-2 h-6 w-[5rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>Tailwind</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-1 row-span-1 border-[2px] border-black">
+                  <div className=" bg-black h-full">
+                    <div className="relative h-full justify-around bg-pink-700 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
+                      <div className=" text-center font-mono text-white font-bold text-[1rem] pb-[1rem] w-full h-1/3 pt-[0.5rem]">
+                        Internship Certificate
+                      </div>
+                      <hr className="border-black border-1 my-[1rem] mx-[1rem]" />
+                      <div className="text-center">
+                        <button className="bg-white p-[0.3rem] rounded-lg ">
+                          <div className="bg-gradient-to-r  from-red-600 to-yellow-400 rounded-lg cursor-pointer">
+                            <div className="p-2 px-3 text-sm font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
+                              Drive Link
+                            </div>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flip-card font-mono row-span-1 col-span-2">
+                  <div className="flip-card-inner h-full flex  border-[2px] border-black">
+                  <div
+                      className="flip-card-front flex p-2 bg-[#bbb] cursor-pointer"
+                    >
+                      <span className="text-xl mt-7 font-bold">Landing Page - </span>
+                      <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroHome.png"/></div>
+                    </div>
+                    <div
+                      className="flip-card-back flex p-2 bg-[#bbb] cursor-pointer"
+                    >
+                      <span className="text-xl mt-7 font-bold">Product Page - </span>
+                      <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroProduct.png"/></div>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
