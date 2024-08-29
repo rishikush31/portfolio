@@ -34,7 +34,10 @@ html, body {
 }
 
 .objectPositionday  {
-  background-position: 0rem bottom;
+  background-position: right top;
+}
+.objectPositionday2  {
+  background-position: right bottom;
 }
 .font-border{
   text-shadow: 1px 1px 0 #000,
@@ -100,4 +103,63 @@ html, body {
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
+}
+.br {
+  position:relative;
+}
+
+.br:after {
+  display: block;
+  content: "";
+  width: 5vw;
+  height: 5vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+.br:before {
+  display: block;
+  content: "";
+  width: 5vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
+.wrapper{
+  transform: translate(0%,0%);
+  border: 1.5px solid #7C3AED;
+}
+
+.a{
+  color: #7C3AED;
+  transition: all .35s;
+}
+
+.span{
+  position: relative;
+  z-index: 2;
+}
+
+.a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #7C3AED;
+  transition: all .35s;
+}
+
+.a:hover{
+  color: #fff;
+}
+
+.a:hover:after{
+  width: 100%;
 }
