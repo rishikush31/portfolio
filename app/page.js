@@ -22,22 +22,24 @@ export default function Home() {
           } md:flex`}
         >
           <div className="p-2 mx-1 cursor-pointer text-sm font-bold rounded-lg hover:bg-gray-200">
-            About
+            <a target="_blank" href="#about">About</a>
           </div>
           <div className="p-2 mx-1 cursor-pointer text-sm font-bold rounded-lg hover:bg-gray-200">
-            Experience
+            <a target="_blank" href="#experience">Experience</a>
           </div>
           <div className="p-2 mx-1 cursor-pointer text-sm font-bold rounded-lg hover:bg-gray-200">
-            Projects
+            <a target="_blank" href="#projects">Projects</a>
           </div>
           <div className="p-2 mx-1 cursor-pointer text-sm font-bold rounded-lg hover:bg-gray-200">
-            Contact
+            <a target="_blank" href="#contact">Contact</a>
           </div>
           <div>
             <div className="bg-gradient-to-r  from-red-600 to-yellow-400 rounded-lg mx-1 cursor-pointer">
-              <div className="relative p-2 text-sm font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
-                Resume
-              </div>
+              <a target="_blank" href="https://drive.google.com/file/d/1MSePH1nttLYwzW-eVGgTwty8Mk14MNRT/view?usp=drive_link">
+                <div className="relative p-2 text-sm font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
+                  Resume
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -67,7 +69,7 @@ export default function Home() {
 
       <div className="">
         {/* Content Sections */}
-        <div className="">
+        <div className="" id="home">
           <div className="absolute h-full w-full z-[3] container">
             <div className=" flex flex-col text-right mr-10 justify-center h-full">
               <div className="text-white font-border font-extrabold font-mono text-[5rem] md:text-[9rem]">
@@ -97,6 +99,7 @@ export default function Home() {
           </Parallax>
         </div>
         <div
+          id="about"
           className="relative font-mono min-h-screen overflow-auto objectPositiontemplate md:bg-right-bottom bg-cover "
           style={{ backgroundImage: `url("/template.jpg")` }}
         >
@@ -121,15 +124,18 @@ export default function Home() {
               use to my coding and problem solving skills. <br />
               <button className="bg-white p-[0.3rem] rounded-lg mt-4 mb-5">
                 <div className="bg-gradient-to-r  from-red-600 to-yellow-400 rounded-lg cursor-pointer">
-                  <div className="p-2 px-3 text-lg font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
-                    Contact me
-                  </div>
+                  <a target="_blank" href="#contact">
+                    <div className="p-2 px-3 text-lg font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
+                      Contact me
+                    </div>
+                  </a>
                 </div>
               </button>
             </div>
           </div>
         </div>
         <div
+          id="experience"
           className="relative min-w-full md:bg-left-top objectPositionfield  min-h-[230vh] bg-cover "
           style={{ backgroundImage: `url("/field.jpg")` }}
         >
@@ -161,9 +167,11 @@ export default function Home() {
                       <div className="text-2xl font-mono text-right ">
                         300+ problems
                       </div>
-                      <div className="text-2xl font-mono text-green-500 cursor-pointer">
-                        rishikush@codechf
-                      </div>
+                      <a target="_blank" href="https://www.codechef.com/users/rishikush31">
+                        <div  className="text-2xl font-mono text-green-500 cursor-pointer">
+                          rishikush@codechf
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -182,9 +190,11 @@ export default function Home() {
                       <div className="text-2xl font-mono text-right ">
                         380+ problems
                       </div>
-                      <div className="text-2xl font-mono text-green-300 cursor-pointer">
-                        rishikush@leetcode
-                      </div>
+                      <a target="_blank" href="https://leetcode.com/u/rishikush31/">
+                        <div className="text-2xl font-mono text-green-300 cursor-pointer">
+                          rishikush@leetcode
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -203,9 +213,11 @@ export default function Home() {
                       <div className="text-2xl font-mono text-right ">
                         190+ problems
                       </div>
-                      <div className="text-2xl font-mono text-green-100 cursor-pointer">
-                        rishikush@atCoder
-                      </div>
+                      <a target="_blank" href="https://atcoder.jp/users/rishikush">
+                        <div className="text-2xl font-mono text-green-100 cursor-pointer">
+                          rishikush@atCoder
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -218,7 +230,11 @@ export default function Home() {
                       </div>
                       <div className="mt-[2rem] text-2xl font-bold font-mono">
                         <hr className="border-black border-1" />
-                        <div className="pt-[1rem] cursor-pointer">LinkedIn</div>
+                        <a target="_blank" href="https://www.linkedin.com/in/rishi-srivastava-38b8a6237/">
+                          <div className="pt-[1rem] cursor-pointer">
+                            LinkedIn
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -236,9 +252,11 @@ export default function Home() {
                       </div>
                       <div className="mt-[1rem] text-2xl font-bold font-mono">
                         <hr className="border-black border-1" />
-                        <div className="pt-[1rem] cursor-pointer">
-                          Certificate
-                        </div>
+                        <a target="_blank" href="https://drive.google.com/file/d/1fRUZtKi7QOOvozrjkYZFKEm1vx7yC7Hx/view?usp=sharing">
+                          <div className="pt-[1rem] cursor-pointer">
+                            Certificate
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -260,9 +278,11 @@ export default function Home() {
                       <div className="text-2xl font-mono text-right ">
                         1400 problems
                       </div>
-                      <div className="text-2xl font-mono text-green-100 cursor-pointer">
-                        rishikush@cforces
-                      </div>
+                      <a target="_blank" href="https://codeforces.com/profile/rishikush">
+                        <div className="text-2xl font-mono text-green-100 cursor-pointer">
+                          rishikush@cforces
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -283,9 +303,11 @@ export default function Home() {
                         rating: 2022
                       </div>
                       <div className=" text-right ">300+ problems</div>
-                      <div className=" text-green-500 cursor-pointer">
-                        rishikush@cchf
-                      </div>
+                      <a target="_blank" href="https://www.codechef.com/users/rishikush31">
+                        <div className=" text-green-500 cursor-pointer">
+                          rishikush@cchf
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -300,9 +322,11 @@ export default function Home() {
                     <div className="h-full flip-card-back py-2 px-4 bg-orange-400 flex flex-col justify-between">
                       <div className=" text-right ">rating: 2022</div>
                       <div className=" text-right ">380+ problems</div>
-                      <div className=" text-green-500 cursor-pointer">
-                        rish@lcode
-                      </div>
+                      <a target="_blank" href="https://leetcode.com/u/rishikush31/">
+                        <div className=" text-green-500 cursor-pointer">
+                          rish@lcode
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -354,9 +378,11 @@ export default function Home() {
                         rating: 1666
                       </div>
                       <div className=" text-right ">1400 problems</div>
-                      <div className=" text-green-500 cursor-pointer">
-                        rish@cforces
-                      </div>
+                      <a target="_blank" href="https://codeforces.com/profile/rishikush">
+                        <div className=" text-green-500 cursor-pointer">
+                          rish@cforces
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -371,15 +397,17 @@ export default function Home() {
                     <div className="h-full flip-card-back py-2 px-4 bg-gray-400 flex flex-col justify-between">
                       <div className=" text-right ">rating: 1068</div>
                       <div className=" text-right ">190+ problems</div>
-                      <div className=" text-green-100 cursor-pointer">
-                        rish@atcoder
-                      </div>
+                      <a target="_blank" href="https://atcoder.jp/users/rishikush">
+                        <div className=" text-green-100 cursor-pointer">
+                          rish@atcoder
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="text-[1.2rem] mt-12 md:text-[2rem] font-mono text-blue-700 font-bold md:font-semibold md:text-left mb-6">
-                Internship 
+                Internship
               </div>
               <div className="bento grid-cols-4 grid-rows-2 gap-5 h-full hidden md:grid">
                 <div className="col-span-3 row-span-1 border-[2px] border-black">
@@ -441,9 +469,11 @@ export default function Home() {
                       <div className="text-center">
                         <button className="bg-white p-[0.3rem] rounded-lg ">
                           <div className="bg-gradient-to-r  from-red-600 to-yellow-400 rounded-lg cursor-pointer">
-                            <div className="p-2 px-3 text-lg font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
-                              Drive Link
-                            </div>
+                            <a target="_blank" href="https://drive.google.com/file/d/1mKOMObpaMxuXRVHeqGIhS6yLIot-UBXv/view?usp=sharing">
+                              <div className="p-2 px-3 text-lg font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
+                                Drive Link
+                              </div>
+                            </a>
                           </div>
                         </button>
                       </div>
@@ -451,37 +481,61 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flip-card font-mono">
+                    <a target="_blank" href="https://www.neurodrishti.com/">
                   <div className="flip-card-inner h-full border-[2px] border-black">
-                    <div
-                      className="flip-card-front flex flex-col pt-2  bg-[#bbb] cursor-pointer"
-                    >
-                      <span className="text-xl px-2 font-bold">Home Page - </span>
-                      <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroHome.png"/></div>
+                    <div className="flip-card-front flex flex-col pt-2  bg-[#bbb] cursor-pointer">
+                      <span className="text-xl px-2 font-bold">
+                        Home Page -{" "}
+                      </span>
+                      <div className=" py-4 px-2 ">
+                        <img
+                          className="rounded-lg  border-2 border-black"
+                          src="/neuroHome.png"
+                        />
+                      </div>
                     </div>
-                    <div
-                      className="flip-card-back flex flex-col pt-2 bg-[#bbb] cursor-pointer"
-                    >
-                      <span className="text-xl px-2 font-bold">Product Page - </span>
-                      <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroProduct.png"/></div>
+                    <div className="flip-card-back flex flex-col pt-2 bg-[#bbb] cursor-pointer">
+                      <span className="text-xl px-2 font-bold">
+                        Product Page -{" "}
+                      </span>
+                      <div className=" py-4 px-2 ">
+                        <img
+                          className="rounded-lg  border-2 border-black"
+                          src="/neuroProduct.png"
+                        />
+                      </div>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div className="col-span-2 row-span-1 border-[2px] border-black">
                   <div className=" bg-black h-full">
                     <div className="relative h-full justify-between flex bg-purple-700 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
                       <div className="text-[3rem] px-4 font-bold flex  font-mono">
                         <div className="mt-6">
-                        Tech <br/> Stack
+                          Tech <br /> Stack
                         </div>
-                      <div className="border-black  border-[1px] mx-4 my-4" ></div>
+                        <div className="border-black  border-[1px] mx-4 my-4"></div>
                       </div>
                       <div className="flex text-1xl flex-wrap font-bold font-mono py-4">
-                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>JavaScript</span></div>
-                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>NextJs</span></div>
-                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>HTML</span></div>
-                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>CSS</span></div>
-                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>Tailwind</span></div>
-                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black"><span>ReactJs</span></div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black">
+                          <span>JavaScript</span>
+                        </div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black">
+                          <span>NextJs</span>
+                        </div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black">
+                          <span>HTML</span>
+                        </div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black">
+                          <span>CSS</span>
+                        </div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black">
+                          <span>Tailwind</span>
+                        </div>
+                        <div className="border-2 h-10 w-[8rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-2 border-black">
+                          <span>ReactJs</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -506,7 +560,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="flip-card-back h-full flex  bg-blue-400 ">
-                    <div className="text-[0.9rem] p-2 font-extrabold font-mono">
+                      <div className="text-[0.9rem] p-2 font-extrabold font-mono">
                         <div className=" cursor-pointer">
                           Task :{" "}
                           <span className="font-semibold text-[0.9rem]">
@@ -542,18 +596,28 @@ export default function Home() {
                   <div className=" bg-black h-full">
                     <div className="relative h-full bg-purple-700 duration-200 hover:translate-y-[-0.30rem] hover:translate-x-[0.35rem] hover:border-[2px] hover:border-black ">
                       <div className="text-[1rem] px-4 font-bold flex  font-mono">
-                        <div className="mt-2">
-                        Tech-Stack
-                        </div>
+                        <div className="mt-2">Tech-Stack</div>
                       </div>
                       <hr className="border-black  border-[0.5px] mx-2 my-1" />
                       <div className="flex text-[0.65rem] flex-wrap font-bold font-mono ">
-                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>JSX</span></div>
-                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>NextJs</span></div>
-                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>HTML</span></div>
-                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>CSS</span></div>
-                        <div className="border-2 h-6 w-[4rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>ReactJs</span></div>
-                        <div className="border-2 h-6 w-[5rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black"><span>Tailwind</span></div>
+                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black">
+                          <span>JSX</span>
+                        </div>
+                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black">
+                          <span>NextJs</span>
+                        </div>
+                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black">
+                          <span>HTML</span>
+                        </div>
+                        <div className="border-2 h-6 w-[3rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black">
+                          <span>CSS</span>
+                        </div>
+                        <div className="border-2 h-6 w-[4rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black">
+                          <span>ReactJs</span>
+                        </div>
+                        <div className="border-2 h-6 w-[5rem] text-center hover:scale-[1.1] rounded-lg m-2 bg-slate-500 p-[0.2rem] border-black">
+                          <span>Tailwind</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -568,9 +632,11 @@ export default function Home() {
                       <div className="text-center">
                         <button className="bg-white p-[0.3rem] rounded-lg ">
                           <div className="bg-gradient-to-r  from-red-600 to-yellow-400 rounded-lg cursor-pointer">
-                            <div className="p-2 px-3 text-sm font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
-                              Drive Link
-                            </div>
+                            <a target="_blank" href="https://drive.google.com/file/d/1mKOMObpaMxuXRVHeqGIhS6yLIot-UBXv/view?usp=sharing">
+                              <div className="p-2 px-3 text-sm font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
+                                Drive Link
+                              </div>
+                            </a>
                           </div>
                         </button>
                       </div>
@@ -578,33 +644,45 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flip-card font-mono row-span-1 col-span-2">
+                    <a target="_blank" href="https://neurodrishti.com/">
                   <div className="flip-card-inner h-full flex  border-[2px] border-black">
-                  <div
-                      className="flip-card-front flex p-2 bg-[#bbb] cursor-pointer"
-                    >
-                      <span className="text-xl mt-7 font-bold">Landing Page - </span>
-                      <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroHome.png"/></div>
-                    </div>
-                    <div
-                      className="flip-card-back flex p-2 bg-[#bbb] cursor-pointer"
-                    >
-                      <span className="text-xl mt-7 font-bold">Product Page - </span>
-                      <div className=" py-4 px-2 "><img className="rounded-lg  border-2 border-black" src="/neuroProduct.png"/></div>
-                    </div>
+                      <div className="flip-card-front flex p-2 bg-[#bbb] cursor-pointer">
+                        <span className="text-xl mt-7 font-bold">
+                          Landing Page -{" "}
+                        </span>
+                        <div className=" py-4 px-2 ">
+                          <img
+                            className="rounded-lg  border-2 border-black"
+                            src="/neuroHome.png"
+                          />
+                        </div>
+                      </div>
+                      <div className="flip-card-back flex p-2 bg-[#bbb] cursor-pointer">
+                        <span className="text-xl mt-7 font-bold">
+                          Product Page -{" "}
+                        </span>
+                        <div className=" py-4 px-2 ">
+                          <img
+                            className="rounded-lg  border-2 border-black"
+                            src="/neuroProduct.png"
+                          />
+                        </div>
+                      </div>
                   </div>
+                    </a>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
         <div
+          id="projects"
           className="relative min-h-[140vh] bg-cover md:objectPositionsakura2 objectPositionsakura"
           style={{ backgroundImage: `url("/sakura.jpg")` }}
         >
           <div className="absolute h-full w-full"></div>
         </div>
-        <div className="relative">
+        <div className="relative" id="contact">
           <div className="absolute h-full w-full"></div>
           <Parallax className="">
             <img
