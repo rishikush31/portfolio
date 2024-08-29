@@ -131,7 +131,7 @@ export default function Home() {
     <div className="">
       <div className="absolute left-0 z-[1] ml-6 mt-6  cursor-pointer ">
         {" "}
-        <a className="text-white font-border font-extrabold font-mono text-2xl font-mono">
+        <a className="text-white font-border font-extrabold font-mono text-2xl">
           @Rishi-Srivastava
         </a>
       </div>
@@ -640,9 +640,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flip-card font-mono">
-                  <a target="_blank" href="https://www.neurodrishti.com/">
                     <div className="flip-card-inner h-full border-[2px] border-black">
                       <div className="flip-card-front flex flex-col pt-2  bg-[#bbb] cursor-pointer">
+                      <a target="_blank" href="https://www.neurodrishti.com/">
                         <span className="text-xl px-2 font-bold">
                           Home Page -{" "}
                         </span>
@@ -652,8 +652,10 @@ export default function Home() {
                             src="/neuroHome.png"
                           />
                         </div>
+                        </a>
                       </div>
                       <div className="flip-card-back flex flex-col pt-2 bg-[#bbb] cursor-pointer">
+                      <a target="_blank" href="https://www.neurodrishti.com/">
                         <span className="text-xl px-2 font-bold">
                           Product Page -{" "}
                         </span>
@@ -663,9 +665,9 @@ export default function Home() {
                             src="/neuroProduct.png"
                           />
                         </div>
+                        </a>
                       </div>
                     </div>
-                  </a>
                 </div>
                 <div className="col-span-2 row-span-1 border-[2px] border-black">
                   <div className=" bg-black h-full">
