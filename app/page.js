@@ -124,6 +124,67 @@ const ContactForm = () => {
   );
 };
 
+const CardComponent = ({
+  image,
+  deployLink,
+  githubLink,
+  name,
+  description,
+  tags,
+}) => {
+  return (
+    <div className="max-w-sm bg-white duration-200 hover:border hover:border-black  h-full hover:translate-y-[-0.4rem] hover:translate-x-[0.4rem] shadow dark:bg-gray-800 dark:border-gray-700">
+      <a target="_blank" href={deployLink}>
+        <img className="" src={image} alt={name} />
+      </a>
+      <div className="p-5 flex flex-col justify-between ">
+        <div>
+          <a target="_blank" href={deployLink}>
+            <h5 className="mb-2 font-mono text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {name}
+            </h5>
+          </a>
+          <p className="mb-3 hidden font-mono md:block font-normal text-gray-700 dark:text-gray-400">
+            {description}
+          </p>
+        </div>
+        <div>
+          <div className="mb-3 hidden md:block">
+            {tags &&
+              tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="inline-block font-mono bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                >
+                  {tag}
+                </span>
+              ))}
+          </div>
+          <div className="flex justify-between">
+          <div className="bg-gradient-to-r  from-red-600 to-yellow-400 rounded-lg  cursor-pointer">
+              <a
+                target="_blank"
+                href={deployLink}
+              >
+                <div className="relative font-mono p-2 text-sm font-bold rounded-lg bg-black text-white duration-200 hover:translate-y-[-0.20rem] hover:translate-x-[0.25rem] ">
+                  Live link
+                </div>
+              </a>
+            </div>
+            <a
+            target="_blank"
+              href={githubLink}
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-700 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:focus:ring-gray-700"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -198,8 +259,12 @@ export default function Home() {
           <div className="absolute h-full w-full z-[3] container">
             <div className=" flex flex-col text-right mr-3 md:mr-10 mt-8 justify-center h-full">
               <div className="text-white font-border font-extrabold font-mono text-[3rem] md:text-[5rem]">
-                <a className="">“I <span className="text-yellow-300">dream</span> my painting <br/> and I <span className="text-orange-600">paint</span> my dream”
-                <br/></a>
+                <a className="">
+                  “I <span className="text-yellow-300">dream</span> my painting{" "}
+                  <br /> and I <span className="text-orange-600">paint</span> my
+                  dream”
+                  <br />
+                </a>
               </div>
               {/* <div className="text-lime-400 font-border text-right font-extrabold font-mono text-[5rem] md:text-[9rem]">
                 Rishi
@@ -207,7 +272,7 @@ export default function Home() {
               <br></br>
               <br></br>
               <div className="text-white font-border font-extrabold font-mono text-4xl">
-              ― Vincent Willem van Gogh
+                ― Vincent Willem van Gogh
               </div>
             </div>
           </div>
@@ -640,8 +705,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flip-card font-mono">
-                    <div className="flip-card-inner h-full border-[2px] border-black">
-                      <div className="flip-card-front flex flex-col pt-2  bg-[#bbb] cursor-pointer">
+                  <div className="flip-card-inner h-full border-[2px] border-black">
+                    <div className="flip-card-front flex flex-col pt-2  bg-[#bbb] cursor-pointer">
                       <a target="_blank" href="https://www.neurodrishti.com/">
                         <span className="text-xl px-2 font-bold">
                           Home Page -{" "}
@@ -652,9 +717,9 @@ export default function Home() {
                             src="/neuroHome.png"
                           />
                         </div>
-                        </a>
-                      </div>
-                      <div className="flip-card-back flex flex-col pt-2 bg-[#bbb] cursor-pointer">
+                      </a>
+                    </div>
+                    <div className="flip-card-back flex flex-col pt-2 bg-[#bbb] cursor-pointer">
                       <a target="_blank" href="https://www.neurodrishti.com/">
                         <span className="text-xl px-2 font-bold">
                           Product Page -{" "}
@@ -665,9 +730,9 @@ export default function Home() {
                             src="/neuroProduct.png"
                           />
                         </div>
-                        </a>
-                      </div>
+                      </a>
                     </div>
+                  </div>
                 </div>
                 <div className="col-span-2 row-span-1 border-[2px] border-black">
                   <div className=" bg-black h-full">
@@ -844,7 +909,58 @@ export default function Home() {
           className="relative min-h-[140vh] bg-cover md:objectPositionsakura2 objectPositionsakura"
           style={{ backgroundImage: `url("/sakura.jpg")` }}
         >
-          <div className="absolute h-full w-full"></div>
+          <div className="absolute h-full w-full">
+            <div className="z-[2] mx-[2rem] md:mx-[5rem] h-full">
+              <div className="font-mono text-[1.5rem] md:text-[3rem] pt-[4rem] font-bold">
+                Projects
+              </div>
+              <div className="text-[0.8rem] hidden md:block font-bold md:text-[1.3em] text-slate-00 font-mono font-border2 md:text-left mb-6">
+                Following projects showcases my skills and experience through
+                real-world examples of my work. Each project is briefly
+                described with links to code repositories and live demos in it.
+                It reflects my ability to solve complex problems, work with
+                different technologies, and manage projects effectively.
+              </div>
+              <div className="flex flex-col md:flex-row justify-between gap-5 py-5  ">
+                <div className="bg-black border-2 border-black">
+                  <CardComponent
+                    image="/notes app.png"
+                    deployLink="https://notes-app-ashy-beta.vercel.app/"
+                    githubLink="https://github.com/rishikush31/Notes-app"
+                    name="Notes-App"
+                    description="Build the notes-app and leant about Fullstack web development methods along with authentication techniques and component libraries."
+                    tags={[
+                      "ReactJs",
+                      "JavaScript",
+                      "CSS",
+                      "MongoDB",
+                      "ExpressJs",
+                    ]}
+                  />
+                </div>
+                <div className="bg-black border-2 border-black">
+                  <CardComponent
+                    image="/news app.png"
+                    deployLink="https://news-app-rishi.netlify.app/"
+                    githubLink="https://github.com/rishikush31/News-App"
+                    name="Dev.News"
+                    description="Developed this Frontend web application where you can search news of your interest. Learnt to use Frontend libraries and gained knowledge about Web API's."
+                    tags={["ReactJs", "JavaScript", "Tailwind"]}
+                  />
+                </div>
+                <div className="bg-black border-2 border-black ">
+                  <CardComponent
+                    image="/musix app.png"
+                    deployLink="https://rishikush31.github.io/music-app/"
+                    githubLink="https://github.com/rishikush31/music-app"
+                    name="Musix-App"
+                    description="Made this Music app using pure HTML, CSS and Javascript, wrote code for audio management using javascript and responsive UI design using HTML and CSS ."
+                    tags={["HTML", "JavaScript", "CSS"]}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div
           className="relative min-h-[140vh] bg-cover md:objectPositionday2 objectPositionday"
@@ -869,8 +985,7 @@ export default function Home() {
                     <div className="flex justify-around ">
                       {/* LinkedIn Icon */}
                       <a
-
-                      className="bg-white hover:bg-blue-500 transition-all p-2 rounded-lg scale-[1.2] hover:scale-[1.3] shadow-2xl" 
+                        className="bg-white hover:bg-blue-500 transition-all p-2 rounded-lg scale-[1.2] hover:scale-[1.3] shadow-2xl"
                         href="https://www.linkedin.com/in/rishi-srivastava-38b8a6237/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -889,8 +1004,7 @@ export default function Home() {
 
                       {/* GitHub Icon */}
                       <a
-
-                      className="bg-white hover:bg-slate-500 transition-all p-2 rounded-lg scale-[1.2] hover:scale-[1.3] shadow-2xl" 
+                        className="bg-white hover:bg-slate-500 transition-all p-2 rounded-lg scale-[1.2] hover:scale-[1.3] shadow-2xl"
                         href="https://github.com/rishikush31"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -909,8 +1023,7 @@ export default function Home() {
 
                       {/* Instagram Icon */}
                       <a
-
-                      className="bg-white p-2 hover:bg-pink-500 transition-all rounded-lg scale-[1.2] hover:scale-[1.3] shadow-2xl" 
+                        className="bg-white p-2 hover:bg-pink-500 transition-all rounded-lg scale-[1.2] hover:scale-[1.3] shadow-2xl"
                         href="https://www.instagram.com/_rishidoesart_"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -928,9 +1041,10 @@ export default function Home() {
                       </a>
 
                       {/* Email Icon */}
-                      <a 
-                      
-                      className="bg-white hover:bg-red-500 transition-all p-2 rounded-lg scale-[1.2] hover:scale-[1.3] shadow-2xl" href="mailto:rishikush31@gmail.com">
+                      <a
+                        className="bg-white hover:bg-red-500 transition-all p-2 rounded-lg scale-[1.2] hover:scale-[1.3] shadow-2xl"
+                        href="mailto:rishikush31@gmail.com"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -945,7 +1059,10 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <img src="/stickers/black cat.webp" className="scale-[0.85] hidden md:block" />
+                <img
+                  src="/stickers/black cat.webp"
+                  className="scale-[0.85] hidden md:block"
+                />
               </div>
             </div>
           </div>

@@ -65,6 +65,18 @@ html, body {
     2px -1px 0 #000,
     -2px -1px 0 #000;
 }
+.font-border2 {
+  text-shadow: 
+    1px 1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px -1px 0 #fff,
+    0px 1px 0 #fff,
+    0px -1px 0 #fff,
+    -1px 0px 0 #fff,
+    1px 0px 0 #fff;
+}
+
 
 
 .flip-card {
